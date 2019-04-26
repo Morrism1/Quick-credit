@@ -2,22 +2,48 @@
 <html lang="en"></html>
 <header>
   <meta charset="UTF-8" /> <title>Quick Credit</title>
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+  />
   <link rel="stylesheet" type="text/css" href="./style.css" />
 </header>
 <body>
+  <a href="#Apply" class="topRight">Apply Loan</a>
+  <a href="#History" class="top">Loan History</a>
+
+  <img src="/loan.jpg" class="bg" alt="" />
   <div class="container" id="container">
     <div class="form-container sign-up-container">
       <form action="#">
-        <h1>Create Account</h1>
         <div class="social-container">
           <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
           <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
           <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
         </div>
+        <h1>Create Account</h1>
         <span>or use your email for registration</span>
         <input type="text" placeholder="Name" />
         <input type="email" placeholder="Email" />
         <input type="password" placeholder="Password" />
+        <div class="input_field select_option">
+          <select>
+            <option>Select a country</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+          </select>
+          <div class="select_arrow"></div>
+        </div>
+        <div class="input_field checkbox_option">
+          <input type="checkbox" id="cb1" />
+          <label for="cb1">I agree with terms and conditions</label>
+        </div>
+        <div class="input_field checkbox_option">
+          <input type="checkbox" id="cb2" />
+          <label for="cb2">I want to receive the newsletter</label>
+        </div>
         <button>Sign Up</button>
       </form>
     </div>
@@ -51,4 +77,5 @@
       </div>
     </div>
   </div>
+  <script src="app.js"></script>
 </body>
