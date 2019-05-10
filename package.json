@@ -1,0 +1,48 @@
+{
+  "name": "quickcredit",
+  "version": "1.0.0",
+  "description": "Quick Credit is an online lending platform that provides short term soft loans to individuals.",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha server/test/*js --require @babel/register --exit",
+    "dev": "nodemon server/api/v1/ --exec babel-node",
+    "babel-build": "babel -d ./build ./server -s --ignore=./server/test",
+    "serve": "node ./build/index.js",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "clean": "rm -rf build && mkdir build",
+    "build": "npm run clean && npm run build-babel",
+    "start": "npm run build && node ./build/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "QuickCredit"
+  ],
+  "author": "Maurice Murangwa",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/register": "^7.4.4",
+    "coveralls": "^3.0.3",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "mocha-lcov-reporter": "^1.3.0",
+    "nodemon": "^1.19.0",
+    "nyc": "^14.1.0"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.1",
+    "mocha": "^6.1.4"
+  }
+}
