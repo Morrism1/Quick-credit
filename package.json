@@ -11,7 +11,7 @@
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "clean": "rm -rf build && mkdir build",
     "build": "npm run clean && npm run build-babel",
-    "start": "npm run build && node ./build/index"
+    "start": "node ./build/index"
   },
   "repository": {
     "type": "git",
