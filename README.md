@@ -1,4 +1,5 @@
 # Quick-credit
+[![Coverage Status](https://coveralls.io/repos/github/Morrism1/Quick-credit/badge.svg?branch=ch-travisci-integrate-165926928)](https://coveralls.io/github/Morrism1/Quick-credit?branch=ch-travisci-integrate-165926928)
 
 
 Quick Credit is an online lending platform that provides short term soft loans to individuals. This
