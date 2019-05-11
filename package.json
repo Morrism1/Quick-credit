@@ -10,7 +10,7 @@
     "serve": "node ./build/index.js",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "clean": "rm -rf build && mkdir build",
-    "build": "npm run clean && npm run build-babel",
+    "build": "npm run clean && npm run babel-build",
     "start": "npm run build && node ./build/api/v1/index.js"
   },
   "repository": {
