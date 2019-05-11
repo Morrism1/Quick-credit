@@ -229,7 +229,7 @@ const getALoan = (req, res) => {
     }
     return res.status(200).json({
       status: 200,
-      data: loans,
+      data: existingLoan,
     });
   }
   return res.status(403).json({
