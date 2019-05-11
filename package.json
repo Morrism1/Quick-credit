@@ -11,11 +11,11 @@
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "clean": "rm -rf build && mkdir build",
     "build": "npm run clean && npm run build-babel",
-    "start": "node ./build/index"
+    "start": "npm run build && node ./build/api/v1/index.js"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/Morrism1/Quick-credit"
   },
   "keywords": [
     "QuickCredit"
