@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Register</title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Sign Up page">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+
+    <link type="text/css" rel="stylesheet" href="/UI/css/signup.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+</head>
+
+<body>
+    <header></header>
+        <section class="signup-view">
+            <div id="overlay"></div>
+            <div class="signup-form-container">
+                <h1>Signup</h1>
+                <form class="form-group">
+                    <div class="row">
+                        <input type="text" name="last" placeholder="Last Name" required />
+                        <input type="text" name="first" placeholder="First Name" required />
+                    </div>
+                    <div class="single-row">
+                        <input type="email" name="email" placeholder="Email address" required />
+                    </div>
+                    <div class="row">
+                        <input type="password" name="password" placeholder="Type Password" required />
+                        <input type="password" name="retypePass" placeholder="Retype Password" required />
+                    </div>
+                    <div class="single-row">
+                        <input type="text" name="address" placeholder="Address" />
+                    </div>
+                    <button class="submit-button" type="submit">Register</button>
+                </form>
+                <div class="login-link"><p>Already registered?&nbsp <a id="signin-user-link" href="../html/signin.html">Login here</a></p></div>
+            </div>
+            <br>
+            <p class="footer">Quick Credit by an Aspiring Andelan</p>
+        </section>  
+</body>
+
+</html>

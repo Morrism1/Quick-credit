@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Admin should be able to view all registered users from the admin dashboard">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="/UI/css/registered-users.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Neuton" rel="stylesheet">
+
+    <title>Admin All Users</title>
+</head>
+
+<body>
+    <header>
+            <nav id="dashboard-nav">
+                    <ul>
+                        <li class="dashboard-nav-brand"><a href="../html/adminIndex.html">Quick&nbsp;<span>Credit Dashboard</span></a></li>
+                        <li class="dashboard-items"><a href="../html/registeredUsers.html">All users</a></li>
+                        <li class="dashboard-items"><a href="../html/loanApplications.html">Loan Applications</a></li>
+                        <li class="dashboard-items"><a href="../html/currentLoans.html">All Loans</a></li>
+                        
+                    </ul>
+                </nav>
+    </header>
+    <main>
+        <section class="users-section">
+            <div class="all-users-header">
+                <h2 class="all-user-title">All registered users</h2><br>
+                <button id="admin-add-user">Add user</button>
+            </div>
+            <div class="all-users">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="users-table-header">NAME</th>
+                            <th class="users-table-header">USER ID</th>
+                            <th class="users-table-header">DATE REGISTERED</th>
+                            <th class="users-table-header">STATUS</th>
+                            <th class="users-table-header">LOANS TAKEN</th>
+                            <th class="users-table-header">LOANS REPAID</th>
+                            <th class="users-table-header" colspan="2">ACTION</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="user-list">
+                            <td id="user-item-1" class="user-item"> Morris Montana</td>
+                            <td id="user-item-2" class="user-item">6736</td>
+                            <td id="user-item-3" class="user-item">15-05-2019</td>
+                            <td id="user-item-4" class="user-item">Not verified</td>
+                            <td id="user-item-5" class="user-item">6 Loans</td>
+                            <td id="user-item-6" class="user-item">5 Repaid</td>
+                            <td id="user-item-2" class="user-item"><button id="suspend-user-button">Suspend</button></td>
+                            <td id="user-item-2" class="user-item"><button id="delete-user-button">Delete</button></td>
+                        </tr>
+
+                        <tr class="user-list">
+                            <td id="user-item-1" class="user-item"> Denis Gatare</td>
+                            <td id="user-item-2" class="user-item">6736</td>
+                            <td id="user-item-3" class="user-item">15-05-2019</td>
+                            <td id="user-item-4" class="user-item">Verified</td>
+                            <td id="user-item-5" class="user-item">6 Loans</td>
+                            <td id="user-item-6" class="user-item">5 Repaid</td>
+                            <td id="user-item-2" class="user-item"><button id="suspend-user-button">Suspend</button></td>
+                            <td id="user-item-2" class="user-item"><button id="delete-user-button">Delete</button></td>
+                        </tr>
+
+                        <tr class="user-list">
+                            <td id="user-item-1" class="user-item"> Emmanuel Africano</td>
+                            <td id="user-item-2" class="user-item">6736</td>
+                            <td id="user-item-3" class="user-item">15-05-2019</td>
+                            <td id="user-item-4" class="user-item">Verified</td>
+                            <td id="user-item-5" class="user-item">6 Loans</td>
+                            <td id="user-item-6" class="user-item">5 Repaid</td>
+                            <td id="user-item-2" class="user-item"><button id="suspend-user-button">Suspend</button></td>
+                            <td id="user-item-2" class="user-item"><button id="delete-user-button">Delete</button></td>
+                        </tr>
+
+                        <tr class="user-list">
+                            <td id="user-item-1" class="user-item"> Boris Mugisha</td>
+                            <td id="user-item-2" class="user-item">6736</td>
+                            <td id="user-item-3" class="user-item">15-05-2019</td>
+                            <td id="user-item-4" class="user-item">Not verified</td>
+                            <td id="user-item-5" class="user-item">6 Loans</td>
+                            <td id="user-item-6" class="user-item">5 Repaid</td>
+                            <td id="user-item-2" class="user-item"><button id="suspend-user-button">Suspend</button></td>
+                            <td id="user-item-2" class="user-item"><button id="delete-user-button">Delete</button></td>
+                        </tr>
+
+                        <tr class="user-list">
+                            <td id="user-item-1" class="user-item"> Doris Uwase</td>
+                            <td id="user-item-2" class="user-item">6736</td>
+                            <td id="user-item-3" class="user-item">15-05-2019</td>
+                            <td id="user-item-4" class="user-item">Verified</td>
+                            <td id="user-item-5" class="user-item">6 Loans</td>
+                            <td id="user-item-6" class="user-item">5 Repaid</td>
+                            <td id="user-item-2" class="user-item"><button id="suspend-user-button">Suspend</button></td>
+                            <td id="user-item-2" class="user-item"><button id="delete-user-button">Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

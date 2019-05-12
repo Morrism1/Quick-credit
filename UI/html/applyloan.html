@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="User can request for a loan on this page">
+
+    <title>Request loan</title>
+    <link rel="stylesheet" type="text/css" href="/UI/css/applyloan.css">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li class="nav-brand">Quick&nbsp;<span>Credit</span></li>
+                <li class="nav-items"><a href="/UI/index.html" id="home-link-item">Home</a></li>
+                <li class="nav-items"><a href="../html/applyloan.html" id="apply-link-item">Apply for loan</a></li>
+                <li class="nav-items"><a href="../html/loanhistory.html" id="repayment-link-item">Repayment History</a></li>
+                <li class="nav-items"><a href="#" id="profile-link-item">Profile</a></li>
+                <li class="navbutton"><a href="/UI/html/signin.html" id="logout-nav-button">Logout</a></li>
+            </ul>
+        </nav>
+
+    </header>
+        <section class="personal">
+            <h1>Loan Application</h1>
+            <form>
+                <div class="card">
+                    <h3>PERSONAL</h3>
+                    <div class="input-group">
+                        <input type="text" name="first" placeholder="First Name">
+                        <input type="text" name="last" placeholder="Last Name">
+                    </div>
+                    <div class="input-row">
+                        <input type="email" name="email" placeholder="Email Address">
+                    </div>
+                    <div class="input-group">
+                        <select>
+                            <option disabled selected value>Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+
+                        <select>
+                            <option disabled selected value>Marital Status</option>
+                            <option value="single">Single</option>
+                            <option value="married">Married</option>
+                        </select>
+                    </div>
+                    <div class="input-row">
+                        <input type="datetime" name="dob" placeholder="Date of birth">
+                    </div>
+                    <div class="input-row">
+                        <input type="tel" name="number" placeholder="Phone number">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>RESIDENCE</h3>
+                    <div class="input-row">
+                        <input type="text" name="address" placeholder="Current Address">
+                    </div>
+                    <div class="input-row">
+                        <input type="text" name="city" placeholder="City">
+                    </div>
+                    <div class="input-row">
+                        <input type="text" name="stateor" placeholder="State of residence">
+                    </div>
+                    <div class="input-group">
+                        <select class="single">
+                            <option disabled selected value value="Residence">Residence Type</option>
+                            <option value="rented">Rented</option>
+                            <option value="owned">Owned</option>
+                            <option value="family-house">Family House</option>
+                        </select>
+                    </div>
+                    <div class="input-row">
+                        <input type="text" name="duration" placeholder="Duration of stay">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>EMPLOYMENT</h3>
+                    <div class="input-group">
+                        <select>
+                            <option disabled selected value>Education</option>
+                            <option value="student">Student</option>
+                            <option value="graduate">First Degree</option>
+                            <option value="postgrag">Masters</option>
+                            <option value="phd">PHD</option>
+                        </select>
+
+                        <select>
+                            <option disabled selected value>Employment Status</option>
+                            <option value="unemployed">Unemployed</option>
+                            <option value="selfemployed">Self Employed</option>
+                            <option value="employed">Employed</option>
+                        </select>
+                    </div>
+                    <div class="input-row">
+                        <input type="text" name="employer" placeholder="Employer/ Business ">
+                    </div>
+                    <div class="input-row">
+                        <input type="datetime" name="workexperience" placeholder="How long have you worked there?">
+                    </div>
+                    <div class="input-row">
+                        <input type="text" name="income" placeholder="Current Income">
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>BANK DETAILS</h3>
+                    <div class="input-group">
+                        <input type="text" name="bank-name" placeholder="Bank Name" required>
+                        <input type="text" name="account-number" placeholder="Account Number" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" name="account-name" placeholder="Name on account" required>
+                        <input type="text" name="bvn" placeholder="BVN" required>
+                    </div>
+                </div>
+                <button type="submit" class="submit-button">Request Loan</button>
+            </form>
+        </section>
+    <footer></footer>
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Admin can perform CRUD operations on this page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="/UI/css/current-loan.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav id="dashboard-nav">
+            <ul>
+                <li class="dashboard-nav-brand"><a href="../html/adminIndex.html">Quick&nbsp;<span>Credit Dashboard</span></a></li>
+                <li class="dashboard-items"><a href="../html/registeredUsers.html">All users</a></li>
+                <li class="dashboard-items"><a href="../html/loanApplications.html">Loan Applications</a></li>
+                <li class="dashboard-items"><a href="../html/currentLoans.html">All Loans</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <section class="all-loans">
+        <div class="paid-unpaid-loans">
+            <div class="loans-title-div">
+                <h2 id="loans-title">Loans</h2>
+                <div class="pull-right">
+                    <label for="filter" class="text-orange"><b>Filter Loans:</b></label>
+                    <select name="filter" class="select" id="filter">
+                        <option disabled selected value>Select</option>
+                        <option value="paid">Paid</option>
+                        <option value="unpaid">Unpaid</option>
+                    </select>
+                </div>
+                <div class="clear-float"></div>
+            </div>
+            <table class="loans-list">
+                <thead>
+                    <tr>
+                        <th>LOAN ID</th>
+                        <th>NAME</th>
+                        <th>AMOUNT</th>
+                        <th>INTEREST</th>
+                        <th>TOTAL</th>
+                        <th>STATUS</th>
+                        <th>DATE DUE</th>
+                        <th>PAYMENT DATE</th>
+                        <th colspan="2">ACTION</th>
+                    </tr>
+                </thead>
+                <tbody class="all-loans-list">
+
+                    <tr class="loans-listitem">
+                        <td>
+                            <p>10918318</p>
+                        </td>
+                        <td>
+                            <p>JON SNOW</p>
+                        </td>
+                        <td>
+                            <p>&#163; 50.00</p>
+                        </td>
+                        <td>
+                            <p>&#163; 500.00</p>
+                        </td>
+                        <td>
+                            <p>&#163; 550.00</p>
+                        </td>
+                        <td>
+                            <p>UNPAID</p>
+                        </td>
+                        <td>
+                            <p>23 MAY 2019</p>
+                        </td>
+                        <td>
+                            <p></p>
+                        </td>
+                        <td>
+                            <a href="../html/specificLoan.html" type="button" class="loan-details">More</a>
+                        </td>
+                        <td>
+                            <a href="#" type="button" class="loan-details">Post</a>
+                        </td>
+                    </tr>
+
+                    <tr class="loans-listitem">
+                        <td>
+                            <p>10918318</p>
+                        </td>
+                        <td>
+                            <p>JON SNOW</p>
+                        </td>
+                        <td>
+                            <p>&#163; 50,000.00</p>
+                        </td>
+                        <td>
+                            <p>&#163; 500.00</p>
+                        </td>
+                        <td>
+                            <p>&#163; 50,500.00</p>
+                        </td>
+                        <td>
+                            <p>UNPAID</p>
+                        </td>
+                        <td>
+                            <p>23 MAY 2019</p>
+                        </td>
+                        <td>
+                            <p></p>
+                        </td>
+                        <td>
+                            <a href="../html/specificLoan.html" type="button" class="loan-details">More</a>
+                        </td>
+                        <td>
+                            <a href="#" type="button" class="loan-details">Post</a>
+                        </td>
+                    </tr>
+
+                    <tr class="loans-listitem">
+                        <td>
+                            <p>10918318</p>
+                        </td>
+                        <td>
+                            <p>JON SNOW</p>
+                        </td>
+                        <td>
+                            <p>&#163; 50,000.00</p>
+                        </td>
+                        <td>
+                            <p>&#163; 500.00</p>
+                        </td>
+                        <td>
+                            <p>&#163; 50,500.00</p>
+                        </td>
+                        <td>
+                            <p>UNPAID</p>
+                        </td>
+                        <td>
+                            <p>23 MAY 2019</p>
+                        </td>
+                        <td>
+                            <p></p>
+                        </td>
+                        <td>
+                            <a href="../html/specificLoan.html" type="button" class="loan-details">More</a>
+                        </td>
+                        <td>
+                            <a href="#" type="button" class="loan-details">Post</a>
+                        </td>
+                    </tr>
+
+                    <tr class="loans-listitem">
+                        <td>
+                            <p>10918318</p>
+                        </td>
+                        <td>
+                            <p>JON SNOW</p>
+                        </td>
+                        <td>
+                            <p>&#163; 50,000.00</p>
+                        </td>
+                        <td>
+                            <p>&#163; 500.00</p>
+                        </td>
+                        <td>
+                            <p>&#163; 50,500.00</p>
+                        </td>
+                        <td>
+                            <p>UNPAID</p>
+                        </td>
+                        <td>
+                            <p>23 MAY 2019</p>
+                        </td>
+                        <td>
+                            <p></p>
+                        </td>
+                        <td>
+                            <a href="../html/specificLoan.html" type="button" class="loan-details">More</a>
+                        </td>
+                        <td>
+                            <a href="#" type="button" class="loan-details">Post</a>
+                        </td>
+                    </tr>
+
+                    <tr class="loans-listitem">
+                        <td>
+                            <p>10918318</p>
+                        </td>
+                        <td>
+                            <p>JON SNOW</p>
+                        </td>
+                        <td>
+                            <p>&#163; 50,000.00</p>
+                        </td>
+                        <td>
+                            <p>&#163; 500.00</p>
+                        </td>
+                        <td>
+                            <p>&#163; 50,500.00</p>
+                        </td>
+                        <td>
+                            <p>UNPAID</p>
+                        </td>
+                        <td>
+                            <p>23 MAY 2019</p>
+                        </td>
+                        <td>
+                            <p></p>
+                        </td>
+                        <td>
+                            <a href="../html/specificLoan.html" type="button" class="loan-details">More</a>
+                        </td>
+                        <td>
+                            <a href="#" type="button" class="loan-details">Post</a>
+                        </td>
+                    </tr>
+
+                    <tr class="loans-listitem">
+                        <td>
+                            <p>10918318</p>
+                        </td>
+                        <td>
+                            <p>JON SNOW</p>
+                        </td>
+                        <td>
+                            <p>&#163; 50,000.00</p>
+                        </td>
+                        <td>
+                            <p>&#163; 500.00</p>
+                        </td>
+                        <td>
+                            <p>&#163; 50,500.00</p>
+                        </td>
+                        <td>
+                            <p>UNPAID</p>
+                        </td>
+                        <td>
+                            <p>23 MAY 2019</p>
+                        </td>
+                        <td>
+                            <p></p>
+                        </td>
+                        <td>
+                            <a href="../html/specificLoan.html" type="button" class="loan-details">More</a>
+                        </td>
+                        <td>
+                            <a href="#" type="button" class="loan-details">Post</a>
+                        </td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    </main>
+</body>
+
+</html>

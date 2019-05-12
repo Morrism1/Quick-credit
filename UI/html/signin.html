@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="User's Login Page">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+
+    <title>Login To Account</title>
+    <link rel="stylesheet" type="text/css" href="/UI/css/signin.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+</head>
+
+<body>
+    <section class="signin-view">
+        <div id="overlay"></div>
+        <div class="signin-form-container">
+            <h1>Login</h1>
+            <form class="login-form">
+                <div class="input-div">
+                    <input type="email" name="email" placeholder="Email" required />
+                </div>
+                <div class="input-div">
+                    <input type="password" name="password" placeholder="Password" required />
+                </div>
+                <!-- wrapped in link tag and changed button type to "button" to enable viewing of the user client pages-->
+                <a href="applyloan.html"><button type="button" class="login-button">Login</button></a>
+            </form>
+            <div class="create-account-link">
+                <p>Not a user? &nbsp;<a href="../html/signup.html" id="signup-link-id">Create account</a><br><a href="../html/reset.html">Reset password</a></p>
+                <br>
+                <p><a id="admin-login-link" href="../html/adminIndex.html">Admin</a></p>
+            </div>
+        </div>
+        <p class="footer">Quick Credit by Aspiring Andelan</p>
+    </section>
+
+</body>
+
+</html>

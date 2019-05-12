@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="User can view history of loan repaid and pending">
+    <meta viewport="width=device-width initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="/UI/css/loanhistory.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gugi|Montserrat" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li class="nav-brand">Quick&nbsp;<span>Credit</span></li>
+                <li class="nav-items"><a href="#" id="home-link-item">Home</a></li>
+                <li class="nav-items"><a href="../html/applyloan.html" id="apply-link-item">Apply for loan</a></li>
+                <li class="nav-items"><a href="../html/loanhistory.html" id="repayment-link-item">Repayment History</a></li>
+                <li class="nav-items"><a href="#" id="profile-link-item">Profile</a></li>
+                <li class="navbutton"><a href="#" id="logout-nav-button">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="repayment-container">
+                <div class="repayment-title">
+                    <h2>Loan Repayment History</h2>
+                    <br>
+                    <button id="request-loan-button" type="button">Request another Loan</button>
+                </div>
+                <table class="history-table">
+                    <thead>
+                        <tr id="table-header">
+                            <th class="header-items">Loan ID</th>
+                            <th class="header-items">Loan Amount</th>
+                            <th class="header-items">Purpose</th>
+                            <th class="header-items">Issue Date</th>
+                            <th class="header-items">Loan Due Date</th>
+                            <th class="header-items">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-content">
+                            <td>23521</td>
+                            <td>&#163;50,000</td>
+                            <td>Business</td>
+                            <td>17-03-2019</td>
+                            <td>17-04-2019</td>
+                            <td class="pending">Pending</td>
+                        </tr>
+                        <tr class="table-content">
+                                <td>23521</td>
+                                <td>&#163;50,000</td>
+                                <td>Business</td>
+                                <td>17-03-2019</td>
+                                <td>17-04-2019</td>
+                                <td class="paid">Paid</td>
+                            </tr>
+                            <tr class="table-content">
+                                    <td>23521</td>
+                                    <td>&#163;50,000</td>
+                                    <td>Business</td>
+                                    <td>17-03-2019</td>
+                                    <td>17-04-2019</td>
+                                    <td class="overdue">Overdue</td>
+                                </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

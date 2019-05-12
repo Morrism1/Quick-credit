@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Admin can perform CRUD operations on this page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="/UI/css/adminIndex.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav id="dashboard-nav">
+            <ul>
+                    <li class="dashboard-items"><a href="/UI/index.html">Home</a></li>
+                <li class="dashboard-nav-brand"><a href="../html/adminIndex.html">Quick&nbsp;<span>Credit Dashboard</span></a></li>
+                <li class="dashboard-items"><a href="../html/registeredUsers.html">All users</a></li>
+                <li class="dashboard-items"><a href="../html/loanApplications.html">Loan Applications</a></li>
+                <li class="dashboard-items"><a href="../html/currentLoans.html">All Loans</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="admin-dashboard">
+            <h2>Dashboard</h2>
+            <div class="overview">
+
+                <div class="overview-item">
+                    <p id="user-total" class="stats-total">393&nbsp;<span id="user-total-span" class="stats-title">Registered<br>
+                            Users</span></p>
+                    <a href="../html/registeredUsers.html"><button type="button" class="quickstats-button">View
+                            all&nbsp;</button></a>
+                </div>
+
+                <div class="overview-item">
+                    <p id="loan-total" class="stats-total">50&nbsp;<span id="loan-total-span" class="stats-title">Loan<br>
+                            Applications</span></p>
+                    <a href="../html/loanApplications.html"><button type="button" class="quickstats-button">View
+                            all&nbsp;</button></a>
+                </div>
+
+                <div class="overview-item">
+                    <p id="total-paid" class="stats-total">80&nbsp;<span id="total-paid-span" class="stats-title">Repaid<br>Loans</span></p>
+                    <a href="../html/currentLoans.html"><button type="button" class="quickstats-button">View all&nbsp;</button></a>
+                </div>
+
+                <div class="overview-item">
+                    <p id="total-unpaid" class="stats-total">250&nbsp;<span id="total-unpaid-span" class="stats-title">Unpaid<br>Loans</span></p>
+                    <a href="../html/currentLoans.html"><button type="button" class="quickstats-button">View all&nbsp;</button></a>
+                </div>
+            </div>
+
+            <div class="user-verification">
+                <div class="verify-title-div">
+                    <h3 id="verify-title">Users requiring confirmation</h3>
+                    <button id="verify-view-all" type="button">View all</button>
+                </div>
+                <table class="user-verify">
+                    <thead>
+                        <tr>
+                            <th>INITIALS</th>
+                            <th>ID</th>
+                            <th>NAME</th>
+                            <th>EMAIL</th>
+                            <th>DATE REGISTERED</th>
+                            <th>STATUS</th>
+                        </tr>
+                    </thead>
+                    <tbody class="user-verify-list">
+
+                        <tr class="user-verify-listitem">
+                            <td id="listitem1">
+                                <h4>OC</h4>
+                            </td>
+                            <td id="listitem2">
+                                <p>5376</p>
+                            </td>
+                            <td id="listitem3">
+                                <p>Morris Montana</p>
+                            </td>
+                            <td id="listitem4">
+                                <p>morrismontana@gmail.com</p>
+                            </td>
+                            <td id="listitem5">
+                                <p>Registered 15th May 2019</p>
+                            </td>
+                            <td id="listitem6">
+                                <p>Not verified</p>
+                            </td>
+                            <td id="listbuttom">
+                                <button type="button" class="user-details">Verify</button>
+                            </td>
+                        </tr>
+
+                        <tr class="user-verify-listitem">
+                            <td id="listitem1">
+                                <h4>OC</h4>
+                            </td>
+                            <td id="listitem2">
+                                <p>5376</p>
+                            </td>
+                            <td id="listitem3">
+                                <p>Morris Montana</p>
+                            </td>
+                            <td id="listitem4">
+                                <p>morrismontana@gmail.com</p>
+                            </td>
+                            <td id="listitem5">
+                                <p>Registered 15th May 2019</p>
+                            </td>
+                            <td id="listitem6">
+                                <p>Not verified</p>
+                            </td>
+                            <td id="listbuttom">
+                                <button type="button" class="user-details">Verify</button>
+                            </td>
+                        </tr>
+
+                        <tr class="user-verify-listitem">
+                            <td id="listitem1">
+                                <h4>OC</h4>
+                            </td>
+                            <td id="listitem2">
+                                <p>5376</p>
+                            </td>
+                            <td id="listitem3">
+                                <p>Morris Montana</p>
+                            </td>
+                            <td id="listitem4">
+                                <p>morrismontana@gmail.com</p>
+                            </td>
+                            <td id="listitem5">
+                                <p>Registered 15th May 2019</p>
+                            </td>
+                            <td id="listitem6">
+                                <p>Not verified</p>
+                            </td>
+                            <td id="listbuttom">
+                                <button type="button" class="user-details">Verify</button>
+                            </td>
+                        </tr>
+
+                        <tr class="user-verify-listitem">
+                            <td id="listitem1">
+                                <h4>OC</h4>
+                            </td>
+                            <td id="listitem2">
+                                <p>5376</p>
+                            </td>
+                            <td id="listitem3">
+                                <p>Morris Montana</p>
+                            </td>
+                            <td id="listitem4">
+                                <p>morrismontana@gmail.com</p>
+                            </td>
+                            <td id="listitem5">
+                                <p>Registered 15th May 2019</p>
+                            </td>
+                            <td id="listitem6">
+                                <p>Not verified</p>
+                            </td>
+                            <td id="listbuttom">
+                                <button type="button" class="user-details">Verify</button>
+                            </td>
+                        </tr>
+
+                        <tr class="user-verify-listitem">
+                            <td id="listitem1">
+                                <h4>OC</h4>
+                            </td>
+                            <td id="listitem2">
+                                <p>5376</p>
+                            </td>
+                            <td id="listitem3">
+                                <p>Morris Montana</p>
+                            </td>
+                            <td id="listitem4">
+                                <p>morrismontana@gmail.com</p>
+                            </td>
+                            <td id="listitem5">
+                                <p>Registered 15th May 2019</p>
+                            </td>
+                            <td id="listitem6">
+                                <p>Not verified</p>
+                            </td>
+                            <td id="listbuttom">
+                                <button type="button" class="user-details">Verify</button>
+                            </td>
+                        </tr>
+
+                        <tr class="user-verify-listitem">
+                            <td id="listitem1">
+                                <h4>OC</h4>
+                            </td>
+                            <td id="listitem2">
+                                <p>5376</p>
+                            </td>
+                            <td id="listitem3">
+                                <p>Morris Montana</p>
+                            </td>
+                            <td id="listitem4">
+                                <p>morrismontana@gmail.com</p>
+                            </td>
+                            <td id="listitem5">
+                                <p>Registered 15th May 2019</p>
+                            </td>
+                            <td id="listitem6">
+                                <p>Not verified</p>
+                            </td>
+                            <td id="listbuttom">
+                                <button type="button" class="user-details">Verify</button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="admin-dashboard">
+            <div class="section-two">
+                <div class="stats-card-1">
+                    <p id="loan-approved" class="stats-total">50&nbsp;<span id="loan-total-span" class="stats-title">Loans<br>
+                            Approved</span></p>
+                </div>
+                <div class="stats-card-2">
+                    <p id="loan-denied" class="stats-total">70&nbsp;<span id="loan-total-span" class="stats-title">Loans<br>
+                            Denied</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
