@@ -1,0 +1,387 @@
+html, body{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: var(--primary);
+}
+
+:root{
+    --primary: #14152e;
+    --background: #afb6c0;
+    --subbackground: #f3f9fb;
+    --neutral: #ececec;
+    --highlight: orange;
+    --secondary: #494ca2;
+    --inputfocus: #dadddf;
+    --buttonfocus: #fdfdfd;
+        
+}
+
+#navbar{
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--primary);
+    padding: 20px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-brand{
+    font-family: 'Gugi', cursive;
+}
+span{
+    color: var(--highlight);
+}
+
+nav ul{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+nav ul li{
+    padding: 20px;
+    color: var(--background);
+    display: inline;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    outline: none;
+    color: var(--neutral);
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid var(--neutral);
+}
+
+#logout-nav-button{
+    background: none;
+    border: 1px solid var(--neutral);
+    color: var(--neutral);
+    float: right;
+    margin-right: 10px;
+    width: 100px;
+    height: max-content;
+    vertical-align: middle;
+    
+}
+
+#logout-nav-button:hover{
+    border: 2px solid var(--neutral);
+}
+
+.personal{
+    width: 100%;
+    padding: 20px 0;
+    height: auto;
+    background-color: var(--background);
+}
+
+.card{
+    margin: 15px auto;
+    width: 500px;
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--subbackground);
+    border-radius: 5px;
+}
+
+form{
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    width: 500PX;
+}
+
+h1{
+    text-align: center;
+    padding-top: 10px;
+    color: var(--neutral);
+}
+h3{
+    padding: 10px;
+}
+
+
+
+input{
+    border: 1px solid var(--secondary);
+    outline: none;
+}
+
+input:focus{
+    background-color: var(--inputfocus);
+}
+
+.input-group{
+    display: inline-block;
+}
+
+.input-group input{
+    width: 188px;
+    height: 35px;
+    margin: 5px;
+    padding: 5px;    
+}
+
+.input-group select{
+    width: 198px;
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid var(--secondary);
+}
+
+.input-group select:focus{
+    background-color: var(--inputfocus);
+}
+
+.input-group .single{
+    width: 410px;
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.input-row input{
+    width: 400px;
+    height: 35px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.submit-button{
+    background-color: var(--primary);
+    width: 500px;
+    margin: auto;
+    border: none;
+    outline: none;
+    color: #dadddf;
+    height: 50px;
+    font-weight: 200;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.submit-button:hover{
+    border: 1px solid #fdfdfd;
+    color: var(--buttonfocus);
+    background: none;
+}
+
+
+
+/** CSS for responsiveness **/
+
+@media screen and (max-width: 520px) {
+    
+    nav ul .nav-items{
+        display: none;
+    }
+    
+    .card{
+        margin: 15px auto;
+        width: 400px;
+        text-align: center;
+        padding: 20px 0;
+        background-color: var(--subbackground);
+        border-radius: 5px;
+    }
+
+    form{
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        width: 400PX;
+    }
+    
+    h1{
+        text-align: center;
+        padding-top: 10px;
+        color: var(--neutral);
+    }
+    h3{
+        padding: 10px;
+    }
+    
+    
+    
+    input{
+        border: 1px solid var(--secondary);
+        outline: none;
+    }
+    
+    input:focus{
+        background-color: var(--inputfocus);
+    }
+    
+    .input-group{
+        display: block;
+    }
+    
+    .input-group input{
+        width: 80%;
+        height: 35px;
+        margin: 5px;
+        padding: 5px;    
+    }
+    
+    .input-group select{
+        width: 83%;
+        height: 40px;
+        margin: 5px;
+        padding: 5px;
+        border: 1px solid var(--secondary);
+    }
+    
+    .input-group select:focus{
+        background-color: var(--inputfocus);
+    }
+    
+    .input-group .single{
+        width: 83%;
+        height: 40px;
+        margin: 5px;
+        padding: 5px;
+    }
+    
+    .input-row input{
+        width: 80%;
+        height: 35px;
+        margin: 5px;
+        padding: 5px;
+    }
+    
+    .submit-button{
+        background-color: var(--primary);
+        width: 80%;
+        margin: auto;
+        border: none;
+        outline: none;
+        color: #dadddf;
+        height: 50px;
+        font-weight: 200;
+        font-size: 20px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    .submit-button:hover{
+        border: 1px solid #fdfdfd;
+        color: var(--buttonfocus);
+        background: none;
+    }
+
+
+  }
+
+  @media screen and (max-width: 490px) {
+    
+    nav ul .nav-items{
+        display: none;
+    }
+    
+    .card{
+        margin: auto;
+        width: 310px;
+        padding: 20px 5px;
+        margin-bottom: 10px;
+        background-color: var(--subbackground);
+        border-radius: 5px;
+    }
+
+    form{
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        width: 320px;
+    }
+    
+    h1{
+        text-align: center;
+        padding-top: 10px;
+        color: var(--neutral);
+    }
+    h3{
+        padding: 10px;
+    }
+    
+    
+    
+    input{
+        border: 1px solid var(--secondary);
+        outline: none;
+    }
+    
+    input:focus{
+        background-color: var(--inputfocus);
+    }
+    
+    .input-group{
+        display: block;
+    }
+    
+    .input-group input{
+        width: 80%;
+        height: 35px;
+        margin: 5px;
+        padding: 5px;    
+    }
+    
+    .input-group select{
+        width: 83%;
+        height: 40px;
+        margin: 5px;
+        padding: 5px;
+        border: 1px solid var(--secondary);
+    }
+    
+    .input-group select:focus{
+        background-color: var(--inputfocus);
+    }
+    
+    .input-group .single{
+        width: 83%;
+        height: 40px;
+        margin: 5px;
+        padding: 5px;
+    }
+    
+    .input-row input{
+        width: 80%;
+        height: 35px;
+        margin: 5px;
+        padding: 5px;
+    }
+    
+    .submit-button{
+        background-color: var(--primary);
+        width: 100%;
+        margin: auto;
+        border: none;
+        outline: none;
+        color: #dadddf;
+        height: 50px;
+        font-weight: 200;
+        font-size: 20px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    .submit-button:hover{
+        border: 1px solid #fdfdfd;
+        color: var(--buttonfocus);
+        background: none;
+    }
+
+
+  }

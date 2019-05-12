@@ -1,0 +1,206 @@
+body{
+    margin: 0;
+    padding-top: 60px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: var(--background);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+:root{
+    --primary: #a06ee1;
+    --secondary: #421b9b;
+    --accent: #cef9e2;
+    --neutral: #cbbcf6;
+    --gray: #a2a8d3;
+    --orangee: rgba(248, 33, 4, 0.795);
+    --danger: red;
+    --success: green;
+    --warning: orange;
+    --body-text-font: 20px;
+    --font-header: 'Neuton', serif;
+    --background: #f2ebfd;
+    --shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
+    --gradient: background-image: linear-gradient(to right, #C9FFBF, #FFAFBD);
+}
+
+#dashboard-nav{
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    background-color: var(--secondary);
+    color: var(--background);
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+#dashboard-nav ul li{
+    display: inline;
+    list-style-type: none;
+    padding: 20px;
+    
+}
+
+.dashboard-nav-brand{
+    font-weight: bold;
+}
+
+span{
+    color: var(--orangee);
+}
+
+#dashboard-nav ul li a{
+    color: var(--white);
+}
+
+h2{
+    padding: 10px;
+}
+
+
+#admin-dashboard{
+    width: 90%;
+    margin: auto;
+    height: auto;
+    /* padding: 30px 20px; */
+    
+}
+
+.overview{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+}
+
+.list-view{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+}
+
+.in-overview-item{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    font-size:11px;
+    margin-left: 10%;
+    
+    
+}
+
+.overview-item{
+    position: relative;
+    background-color: var(--white);
+    border-radius: 3px;
+    box-shadow: var(--shadow);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 10px;
+    
+}
+
+.stats-title{
+    font-size: 16px;
+    color: var(--primary);
+
+}
+
+.stats-total{
+    font-size: 25px;
+    padding: 5px;
+    margin: 0;
+    font-weight: bold;
+    color: var(--highlight);
+
+}
+
+
+.loan-applications{
+    background-color: var(--white);
+    margin: 10px;
+    padding: 10px;
+    overflow: auto;
+    border-radius: 3px;
+    
+}
+
+#loan-applications-table{
+    width: 100%;
+    padding: 10px;
+}
+
+h3, tr, th{
+    padding: 5px 15px;
+}
+
+.quickstats-button{
+    width: 100%;
+    height: 40px;
+    background-color: var(--white);
+    color: var(--highlight);
+    text-align: center;
+    cursor: pointer;
+    font-size: var(--medium-button-font);
+    border: 1px solid var(--highlight);
+}
+
+.quickstats-button:hover{
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+}
+
+.top{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 60px;
+    margin-bottom: 2em;
+}
+
+.buttons{
+    text-align: right;
+    margin-top: 2em;
+    /* padding: 10px; */
+    height: 30px;
+    width: 100px;
+}
+
+button{
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#admin-accept-loan{
+    background-color: var(--success);
+    color: white;
+    border: none;
+}
+
+#admin-accept-loan:hover{
+    background-color: white;
+    border: 1px solid var(--success);
+    color: var(--success);
+}
+
+#admin-decline-loan{
+    background-color: var(--danger);
+    color: white;
+    border: none;
+}
+
+#admin-decline-loan:hover{
+    background-color: white;
+    color: var(--danger);
+    border:1px solid var(--danger);
+}

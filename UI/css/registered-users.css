@@ -1,0 +1,155 @@
+body{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 60px;
+    margin: 0;
+    background-color: var(--background);
+    font-family: 'Lora', serif;
+}
+
+:root{
+    --primary: #a06ee1;
+    --secondary: #421b9b;
+    --accent: #cef9e2;
+    --neutral: #cbbcf6;
+    --gray: #a2a8d3;
+    --orangee: rgba(248, 33, 4, 0.795);
+    --danger: red;
+    --warning: orange;
+    --body-text-font: 20px;
+    --font-header: 'Neuton', serif;
+    --background: #f2ebfd;
+    --shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
+    --gradient: background-image: linear-gradient(to right, #C9FFBF, #FFAFBD);
+}
+
+#dashboard-nav{
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    background-color: var(--secondary);
+    color: var(--background);
+}
+
+a{
+    text-decoration: none;
+}
+
+#dashboard-nav ul li{
+    display: inline;
+    list-style-type: none;
+    padding: 20px;
+    
+}
+
+.dashboard-nav-brand{
+    font-weight: bold;
+}
+
+span{
+    color: var(--orangee);
+}
+
+#dashboard-nav ul li a{
+    color: var(--white);
+}
+
+
+.users-section{
+    width: 80%;
+    min-width: 920px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: white;
+}
+
+.all-users-header{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#admin-add-user{
+    float: right;
+    background-color: white;
+    color: var(--orangee);
+    border: 1px solid var(--orangee);
+    padding: 10px;
+    font-size: var(--body-text-font);   
+    cursor: pointer;
+
+}
+
+.all-user-title{
+    float: left;
+    color: var(--orangee) !important;
+    padding: 5px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-list{
+    height: 80px;
+    font-size: var(--body-text-font);
+    color: var(--secondary);
+}
+
+.user-list:hover{
+    box-shadow: var(--shadow);
+}
+
+/* table tr:nth-child(even) {
+    background-color: var(--accent);
+  }
+  table tr:nth-child(odd) {
+   background-color: white;
+  } */
+  table th {
+    background-color: var(--primary);
+    color: white;
+    text-align: start;
+    letter-spacing:  2px;
+    padding: 10px;
+    
+  }
+
+  td{
+      padding: 10px;
+  }
+
+#delete-user-button{
+    background-color: var(--danger);
+    color: white;
+}
+
+#delete-user-button:hover{
+    border: 1px solid var(--danger);
+    background-color: white;
+    color: var(--danger);
+}
+
+#suspend-user-button{
+    background-color: var(--warning);
+    color: white;
+}
+
+#suspend-user-button:hover{
+    border: 1px solid var(--warning);
+    background-color: white;
+    color: var(--warning);
+}
+
+#suspend-user-button, #delete-user-button{
+    width: 80px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}

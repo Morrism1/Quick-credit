@@ -1,0 +1,153 @@
+:root{
+    --primary: #652bb1;
+    --highlight: #5827ca;
+    --accent: #cef9e2;
+    --neutral: #cbbcf6;
+    --white: white;
+    --orangee: rgba(240, 207, 20, 0.911);
+    --background: #f2ebfd;
+
+    --medium-button-font: 18px;
+
+    --shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+body{
+    margin: 0;
+    padding-top: 60px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: var(--background);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#dashboard-nav{
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    background-color: var(--highlight);
+}
+
+#dashboard-nav ul li{
+    display: inline;
+    list-style-type: none;
+    padding: 20px;
+    
+}
+
+.dashboard-nav-brand{
+    font-weight: bold;
+}
+
+span{
+    color: var(--orangee);
+}
+
+#dashboard-nav ul li a{
+    color: var(--white);
+}
+
+.all-loans{
+    width: 80%;
+    margin: auto;
+    height: auto;
+    padding: 30px 20px;
+    
+}
+
+.paid-unpaid-loans{
+    background-color: var(--white);
+    width: 100%;
+    overflow-x: auto;
+}
+
+.loans-title-div{
+    position: relative;
+    border-bottom: 1px solid var(--neutral);
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+#loans-title{
+    color: var(--orangee);
+    float: left;
+    padding: 10px;
+}
+
+.loans-list{
+    width: 100%;
+    position: relative;
+    background-color: var(--white);
+    border-radius: 3px;
+    
+}
+
+.pull-right{
+    padding:10px;
+    margin-top: 10px;
+    float: right;
+}
+
+.clear-float{
+    clear: both;
+}
+
+.select{
+    padding:10px;
+    background-color: transparent
+}
+
+.text-orange{
+    color: var(--orangee);
+}
+
+.all-loans-list{
+    padding: 10px;
+    width: 100%;
+}
+
+.loans-listitem{
+    color: var(--highlight);
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid black;
+}
+
+.loans-listitem:hover{
+    box-shadow: var(--shadow);
+}
+
+h2{
+    padding: 10px;
+}
+
+th, td{
+    padding: 5px 10px;
+    color: var(--highlight);
+    text-align: center;
+}
+
+.loan-details{
+    background-color: var(--highlight);
+    color: var(--white);
+    border: none;
+    width: 100px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.loan-details:hover{
+    background-color: var(--white);
+    color: var(--highlight);
+    border: 1px solid var(--highlight);
+}
+
+a{
+    text-decoration: none;
+}

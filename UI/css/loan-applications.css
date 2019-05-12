@@ -1,0 +1,161 @@
+body{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 60px;
+    margin: 0;
+    background-color: var(--background);
+    font-family: 'Lora', serif;
+}
+
+:root{
+    --primary: #4c0ca0;
+    --secondary: #5e38b6;
+    --accent: #cef9e2;
+    --neutral: #cbbcf6;
+    --gray: #a2a8d3;
+    --orangee: rgba(248, 33, 4, 0.795);
+    --danger: red;
+    --success: green;
+    --warning: orange;
+    --body-text-font: 20px;
+    --font-header: 'Neuton', serif;
+    --background: #f2ebfdf5;
+    --shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
+    --gradient: background-image: linear-gradient(to right, #C9FFBF, #FFAFBD);
+}
+
+#dashboard-nav{
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    background-color: var(--secondary);
+    color: var(--background);
+}
+a{
+    text-decoration: none;
+}
+
+#dashboard-nav ul li{
+    display: inline;
+    list-style-type: none;
+    padding: 20px;
+    
+}
+
+.dashboard-nav-brand{
+    font-weight: bold;
+}
+
+span{
+    color: var(--orangee);
+}
+
+#dashboard-nav ul li a{
+    color: var(--white);
+}
+
+
+.loans-application-section{
+    width: 80%;
+    min-width: 920px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: white;
+}
+
+.loans-header{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+all-loans{
+    overflow-x: auto;
+}
+
+.all-loans-title{
+    float: left;
+    color: var(--orangee) !important;
+    padding: 5px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.loan-application-list{
+    height: 80px;
+    font-size: var(--body-text-font);
+    color: var(--secondary);
+    padding: 10px;
+}
+
+.loan-application-list:hover{
+    box-shadow: var(--shadow);
+}
+
+/* table tr:nth-child(even) {
+    background-color: var(--accent);
+  }
+  table tr:nth-child(odd) {
+   background-color: white;
+  } */
+  table th {
+    background-color: var(--primary);
+    color: white;
+    text-align: start;
+    letter-spacing:  2px;
+    padding: 10px;
+    
+  }
+
+ td{
+    letter-spacing:  2px;
+    padding: 10px;
+  }
+
+  #loan-more-details{
+      background-color: var(--secondary);
+      color: white;
+  }
+
+  #loan-more-details:hover{
+      border: 1px solid var(--secondary);
+      background-color: white;
+      color: var(--secondary);
+  }
+
+  #loan-reject-button{
+    background-color: var(--danger);
+    color: white;
+}
+
+#loan-reject-button:hover{
+    border: 1px solid var(--danger);
+    background-color: white;
+    color: var(--danger);
+}
+
+#loan-approve-button{
+    background-color: var(--success);
+    color: white;
+}
+
+#loan-approve-button:hover{
+    border: 1px solid var(--success);
+    background-color: white;
+    color: var(--success);
+}
+
+#loan-more-details, #loan-approve-button, #loan-reject-button{
+    width: 80px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}

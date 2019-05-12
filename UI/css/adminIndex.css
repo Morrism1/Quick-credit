@@ -1,0 +1,247 @@
+:root{
+    --primary: #a06ee1;
+    --highlight: #421b9b;
+    --accent: #cef9e2;
+    --neutral: #cbbcf6;
+    --white: white;
+    --orangee: rgba(248, 33, 4, 0.795);
+    --background: #f2ebfd;
+
+    --medium-button-font: 18px;
+
+    --shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+body{
+    margin: 0;
+    padding-top: 60px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: var(--background);
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+    color: var(--orangee);
+}
+
+#dashboard-nav{
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    background-color: var(--highlight);
+}
+
+a{
+    text-decoration: none;
+}
+
+#dashboard-nav ul li{
+    display: inline;
+    list-style-type: none;
+    padding: 20px;
+    
+}
+
+.dashboard-nav-brand{
+    font-weight: bold;
+}
+
+span{
+    color: var(--orangee);
+}
+
+#dashboard-nav ul li a{
+    color: var(--white);
+}
+
+
+.admin-dashboard{
+    width: 80%;
+    margin: auto;
+    height: auto;
+    padding: 30px 20px;
+    
+}
+
+.overview{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 150px;
+}
+
+.overview-item{
+    position: relative;
+    background-color: var(--white);
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin: 10px 2px;
+    
+}
+.overview-item:hover{
+    box-shadow: var(--shadow);
+}
+
+.stats-title{
+    font-size: 18px;
+    color: var(--primary);
+
+}
+
+.stats-total{
+    font-size: 25px;
+    padding: 5px;
+    margin: 0;
+    font-weight: bold;
+    color: var(--highlight);
+
+}
+
+.user-verification{
+    background-color: var(--white);
+    width: 100%;
+}
+
+.user-verify{
+    width: 100%;
+    position: relative;
+    background-color: var(--white);
+    border-radius: 3px;
+    
+}
+
+.verify-title-div{
+    position: relative;
+    border-bottom: 1px solid var(--neutral);
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+#verify-title{
+    color: var(--orangee);
+    float: left;
+    padding: 10px;
+}
+
+#verify-view-all{
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    float: right;
+    background-color: white;
+    color: var(--highlight);
+    font-size: var(--medium-button-font);
+    border: 1px solid var(--highlight);
+}
+
+#verify-view-all:hover{
+    background-color: var(--primary);
+    color: white;
+    border:none;
+}
+
+th, td{
+    padding: 5px 10px;
+    color: var(--highlight);
+}
+
+h4{
+    color: var(--orangee);
+}
+
+.user-verify-list{
+    padding: 10px;
+    width: 100%;
+}
+
+.user-verify-listitem{
+    color: var(--highlight);
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid black;
+}
+
+.user-verify-listitem:hover{
+    box-shadow: var(--shadow);
+}
+
+
+
+.quickstats-button{
+    width: 100%;
+    height: 40px;
+    background-color: var(--white);
+    color: var(--highlight);
+    text-align: center;
+    cursor: pointer;
+    font-size: var(--medium-button-font);
+    border: 1px solid var(--highlight);
+}
+
+.quickstats-button:hover{
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+}
+
+.user-details{
+    background-color: var(--highlight);
+    color: var(--white);
+    border: none;
+    width: 100px;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.user-details:hover{
+    background-color: var(--white);
+    color: var(--highlight);
+    border: 1px solid var(--highlight);
+}
+
+.section-two{
+    position: relative;
+    width: 100%;
+}
+
+.stats-card-1{
+    float: left;
+    width: 50%;
+    height:150px;
+    text-align: center;
+    padding: 30px 10px;
+    margin-bottom: 10px;
+    background-color: var(--white);
+}
+.stats-card-2{
+    float: right;
+    width: 45%;
+    padding: 30px 10px;
+    background-color: var(--white);
+    height: 150px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section-two p{
+    font-size: 40px;
+    font-weight: 700px;
+    color: var(--highlight);
+}
+
+.section-two p span{
+    font-size: 24px;
+    color: var(--primary);
+}
+
+.stats-card-1, .stats-card-2:hover{
+    box-shadow: var(--shadow);
+}
